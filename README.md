@@ -4,9 +4,9 @@ simple calculator written in Java; supports addition, subtraction, multiplicatio
 
 Broj linija koda (LOC): Datoteka "Calculator.java" ima ukupno 188 linija koda (134 LOC).
 
-Ciklomatska složenost: Ciklomatska složenost mjeri broj putova kroz kod i određuje minimalni broj testova potrebnih za potpunu pokrivenost. U ovom slučaju, ciklomatska složenost ovisi o složenosti metode Calculate(). S obzirom na to da metoda ima nekoliko uvjetnih izjava i petlji, može se pretpostaviti da je ciklomatska složenost prilično visoka.
+Ciklomatska složenost: Ciklomatska složenost meri broj puteva kroz kod i određuje minimalni broj testova potrebnih za potpunu pokrivenost. U ovom slučaju, ciklomatska složenost ovisi o složenosti metode Calculate(). S obzirom na to da metoda ima nekoliko uslovnih izjava i petlji, može se pretpostaviti da je ciklomatska složenost prilično visoka.
 
-Kognitivna složenost:  Ova datoteka ima nekoliko unutarnjih klasa, statičkih metoda i kompleksnih algoritama za evaluaciju izraza. To može povećati kognitivnu složenost i otežati razumijevanje koda.
+Kognitivna složenost:  Ova datoteka ima nekoliko unutarnjih klasa, statičkih metoda i kompleksnih algoritama za evaluaciju izraza. To može povećati kognitivnu složenost i otežati razumevanje koda.
 
 Potencijalne greške:
 
@@ -14,11 +14,11 @@ U liniji 20: Metoda ToString() je napisana s velikim početnim slovom, što nije
 
 U liniji 36: Postoji greška u dodavanju nule na početak izraza ako izraz započinje s "+" ili "-". Trenutna implementacija dodaje nulu kao znakovni niz umjesto broja. Ispravna implementacija bi bila expression = "0" + expression;.
 
-U liniji 46: Petlja za parsiranje operacija (znakova) ne obrađuje posljednji znak izraza. Trebalo bi promijeniti uvjet petlje u i < expression.length() umjesto i < expression.length() - 1 kako bi se uključio i posljednji znak.
+U liniji 46: Petlja za parsiranje operacija (znakova) ne obrađuje posljednji znak izraza. Trebalo bi promeniti uslov petlje u i < expression.length() umesto i < expression.length() - 1 kako bi se uključio i posljednji znak.
 
-U linijama 53-71: Petlja za parsiranje brojeva u float vrijednosti ne obrađuje specijalne slučajeve kao što su "-Infinity" i "Infinity" ispravno. Trenutno se te vrijednosti pohranjuju kao znakovni nizovi umjesto odgovarajućih float vrijednosti. Trebalo bi dodati provjere za ove slučajeve i pravilno parsirati brojeve.
+U linijama 53-71: Petlja za parsiranje brojeva u float vrednosti ne obrađuje specijalne slučajeve kao što su "-Infinity" i "Infinity" ispravno. Trenutno se te vrednosti skladiste kao znakovni nizovi umesto odgovarajućih float vrednosti. Trebalo bi dodati provere za ove slučajeve i pravilno parsirati brojeve.
 
-U linijama 86-119: Metoda Calculate() ima složenu logiku za izračun rezultata iz liste brojeva i operacija. Postoji nekoliko potencijalnih grešaka u logici, uključujući nepravilno rukovanje množenjem i dijeljenjem kada su prisutni i zbrajanje i oduzimanje. Također, manipulacija listama brojeva i operacija može dovesti do pogrešnih rezultata ili iznim
+U linijama 86-119: Metoda Calculate() ima složenu logiku za izračun rezultata iz liste brojeva i operacija. Postoji nekoliko potencijalnih grešaka u logici, uključujući nepravilno rukovanje množenjem i deljenjem kada su prisutni i sabiranje i oduzimanje. Također, manipulacija listama brojeva i operacija može dovesti do pogrešnih rezultata.
 
 # start-java
 Broj linija koda (LOC): Ovaj kod ima ukupno 26 linija (19 LOC).
